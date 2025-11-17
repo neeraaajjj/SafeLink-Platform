@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeLink - Quiz (Network Security Hard)</title> <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for sidebar */
+        aside::-webkit-scrollbar {
+            width: 6px;
+        }
+        aside::-webkit-scrollbar-track {
+            background: #1f2937; /* gray-800 */
+        }
+        aside::-webkit-scrollbar-thumb {
+            background: #4b5563; /* gray-600 */
+            border-radius: 3px;
+        }
+        aside::-webkit-scrollbar-thumb:hover {
+            background: #6b7280; /* gray-500 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 antialiased">
+
+    <div class="flex h-screen bg-gray-100">
+        <aside class="w-64 flex-shrink-0 bg-gray-900 text-gray-300 p-6 flex flex-col gap-2 overflow-y-auto hidden md:flex">
+            <h2 class="text-2xl font-bold text-white mb-6">Topics</h2>
+            
+            <a href="Linux.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Linux</span>
+            </a>
+            <a href="EthicalHacking.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5.026a11.954 11.954 0 01-1.122 3.993A11.954 11.954 0 01.5 13.5c0 1.78.498 3.444 1.38 4.848A11.95 11.95 0 0110 18.056a11.95 11.95 0 018.12-4.708A11.954 11.954 0 0119.5 13.5a11.954 11.954 0 01-1.644-4.481A11.954 11.954 0 0117.834 5.026A11.954 11.954 0 0110 1.944zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Ethical Hacking</span>
+            </a>
+            <a href="Penetration testing.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M9 4.804A7.968 7.968 0 001.953 10c0 1.042.196 2.04.543 2.968l1.04-1.04A6.012 6.012 0 013 10c0-1.654.67-3.14 1.757-4.243l1.04-1.04C5.17 4.97 4.51 5 4 5c-.17 0-.337.016-.5.042zM10 18.056a7.968 7.968 0 007.047-5.196c0-1.042-.196-2.04-.543-2.968l-1.04 1.04A6.012 6.012 0 0117 10c0 1.654-.67 3.14-1.757 4.243l-1.04 1.04C14.83 15.03 15.49 15 16 15c.17 0 .337-.016.5-.042A7.968 7.968 0 0010 18.056zM10 3a7 7 0 100 14 7 7 0 000-14zM10 5a5 5 0 100 10 5 5 0 000-10z" /></svg>
+                <span class="truncate">Penetration Testing</span>
+            </a>
+            <a href="Security.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Security</span>
+            </a>
+            <a href="cloud security.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.739-1.988A5.5 5.5 0 0117.5 16H5.5z" /></svg>
+                <span class="truncate">Cloud Security</span>
+            </a>
+            <a href="cryptography.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Cryptography</span>
+            </a>
+            <a href="Network security.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg>
+                <span class="truncate">Network Security</span>
+            </a>
+            <a href="Web security.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm2 0v8h10V5H5z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Web Security</span>
+            </a>
+            </a>
+        </aside>
+
+        <div class="flex-1 flex flex-col h-screen overflow-hidden">
+            <header class="bg-white shadow-md border-b border-gray-200">
+                <nav class="flex justify-between items-center p-5">
+                    <div class="text-2xl font-extrabold text-indigo-600">
+                        SAFELINK-PLATFORM
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <a href="learning.html" class="text-gray-600 hover:text-indigo-600 font-medium">LEARNING</a>
+                        <a href="index.html" class="text-indigo-600 font-semibold">QUIZ</a> <a href="roadmap.html" class="text-gray-600 hover:text-indigo-600 font-medium">ROADMAP</a>
+                    </div>
+                    <div class="w-10 h-10 bg-gray-300 rounded-full">
+                         </div>
+                </nav>
+            </header>
+
+            <main class="flex-1 overflow-y-auto p-8">
+                
+                <div id="quiz-question-view" class="max-w-4xl mx-auto">
+                    <div class="bg-white p-8 rounded-xl shadow-2xl">
+                        <div class="flex justify-between items-center mb-6 pb-4 border-b">
+                            <div id="quiz-question-counter" class="text-xl font-semibold text-gray-700">Question 1 of 20</div>
+                            <div id="quiz-timer" class="text-2xl font-bold text-gray-800 bg-gray-100 px-4 py-2 rounded-lg">
+                                01:30
+                            </div>
+                        </div>
+
+                        <h2 id="quiz-question-text" class="text-2xl md:text-3xl font-bold text-gray-900 mb-8" style="min-height: 100px;">
+                            Loading question...
+                        </h2>
+
+                        <div id="quiz-options-container" class="flex flex-col gap-4">
+                            </div>
+                    </div>
+
+                    <div class="mt-8 p-4 bg-white rounded-lg shadow-lg flex justify-between items-center">
+                        <span id="quiz-difficulty-display" class="text-gray-700 font-semibold text-lg">Difficulty: Hard</span>
+                        
+                        <button id="next-question-btn" class="bg-indigo-600 text-white font-medium py-2 px-6 rounded-lg hover:bg-indigo-700 transition-all disabled:opacity-50" disabled>
+                            Next
+                        </button>
+                        
+                        <a href="index.html" id="finish-quiz-btn" class="hidden bg-green-600 text-white font-medium py-2 px-6 rounded-lg hover:bg-green-700 transition-all">
+                            Finish
+                        </a>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- 1. MOCK QUIZ DATA ---
+            // 20 Hard Network Security Questions
+            const quizQuestions = [
+                { q: "What is 'DNSSEC' (DNS Security Extensions)?", o: ["A protocol to verify the authenticity and integrity of DNS data", "A protocol to encrypt all DNS traffic", "A type of firewall for DNS", "A faster DNS server"], a: "A protocol to verify the authenticity and integrity of DNS data" },
+                { q: "What is 'DNS over HTTPS' (DoH)?", o: ["A protocol that encrypts DNS queries inside HTTPS traffic", "A secure version of DNSSEC", "A protocol for hosting websites", "A type of DDoS attack"], a: "A protocol that encrypts DNS queries inside HTTPS traffic" },
+                { q: "What is the primary difference between a 'stateful' and 'stateless' firewall?", o: ["Stateful tracks connections; stateless inspects packets individually", "Stateful is for hardware; stateless is for software", "Stateful is old; stateless is new", "Stateful blocks; stateless allows"], a: "Stateful tracks connections; stateless inspects packets individually" },
+                { q: "What is 'IPsec' (Internet Protocol Security)?", o: ["A protocol suite for securing IP traffic at the network layer", "A secure version of FTP", "A type of VPN client", "A firewall standard"], a: "A protocol suite for securing IP traffic at the network layer" },
+                { q: "What are the two primary modes of IPsec?", o: ["Transport mode and Tunnel mode", "Client mode and Server mode", "Open mode and Secure mode", "Layer 2 and Layer 3 mode"], a: "Transport mode and Tunnel mode" },
+                { q: "What is a 'deep packet inspection' (DPI) firewall?", o: ["A firewall that inspects the data payload of a packet", "A firewall that only inspects packet headers", "A firewall that inspects physical cables", "A firewall that is very slow"], a: "A firewall that inspects the data payload of a packet" },
+                { q: "What is 'network segmentation'?", o: ["Dividing a network into smaller, isolated subnetworks", "Joining two networks together", "A type of network attack", "A network monitoring tool"], a: "Dividing a network into smaller, isolated subnetworks" },
+                { q: "What is 'Zero Trust' as a network security model?", o: ["A model that assumes no user or device is trusted by default", "A model with no security", "A model that trusts all users", "A model for physical security"], a: "A model that assumes no user or device is trusted by default" },
+                { q: "What is 'BGP hijacking'?", o: ["An attack that maliciously re-routes internet traffic by corrupting BGP tables", "An attack on a browser", "A Wi-Fi deauthentication attack", "A physical attack on a router"], a: "An attack that maliciously re-routes internet traffic by corrupting BGP tables" },
+                { q: "What is 'WPA3' and how is it an improvement over WPA2?", o: ["It replaces PSK with SAE (Simultaneous Authentication of Equals)", "It uses a longer key", "It is just a new name for WPA2", "It is faster"], a: "It replaces PSK with SAE (Simultaneous Authentication of Equals)" },
+                { q: "What is an 'evil twin' attack?", o: ["A fraudulent Wi-Fi access point that mimics a legitimate one", "A physical clone of a server", "A piece of malware", "A phishing email"], a: "A fraudulent Wi-Fi access point that mimics a legitimate one" },
+                { q: "What does 'NAC' stand for?", o: ["Network Access Control", "Network Address Controller", "New Access Code", "Network Authentication Check"], a: "Network Access Control" },
+                { q: "What is the purpose of 'egress filtering'?", o: ["To inspect and filter outbound network traffic", "To inspect and filter inbound network traffic", "To filter email", "To filter web content"], a: "To inspect and filter outbound network traffic" },
+                { q: "What is a 'TCP RST' attack?", o: ["An attack that spoofs a reset packet to terminate a TCP connection", "An attack that floods with RST packets", "An attack that steals RST packets", "A secure reset procedure"], a: "An attack that spoofs a reset packet to terminate a TCP connection" },
+                { q: "What is 'NetFlow'?", o: ["A Cisco protocol for collecting network traffic metadata", "A firewall log", "A packet capture file format", "A network speed test"], a: "A Cisco protocol for collecting network traffic metadata" },
+                { q: "What is 'SNMP' (Simple Network Management Protocol)?", o: ["A protocol for monitoring and managing network devices", "A secure file transfer protocol", "A secure shell protocol", "A network routing protocol"], a: "A protocol for monitoring and managing network devices" },
+                { q: "What is a 'smurf attack'?", o: ["A DDoS attack using spoofed ICMP packets to a broadcast address", "A small, insignificant attack", "An attack on a firewall", "A social engineering attack"], a: "A DDoS attack using spoofed ICMP packets to a broadcast address" },
+                { q: "What is 'OS fingerprinting'?", o: ["Identifying a remote operating system based on its network responses", "Scanning a fingerprint for access", "A type of malware", "A server backup"], a: "Identifying a remote operating system based on its network responses" },
+                { q: "What is 'port knocking'?", o: ["A method to open firewall ports by sending a specific sequence of connection attempts", "An attack that tries every port", "A network scan", "A physical attack on a port"], a: "A method to open firewall ports by sending a specific sequence of connection attempts" },
+                { q: "What is 'SSL stripping'?", o: ["A MITM attack that downgrades an HTTPS connection to HTTP", "Removing SSL certificates", "An attack on a firewall", "A secure way to browse"], a: "A MITM attack that downgrades an HTTPS connection to HTTP" }
+            ];
+
+
+            // --- 2. STATE VARIABLES ---
+            let currentQuestionIndex = 0;
+            let score = 0;
+            let timerInterval;
+            let timeRemaining = 90; // 90 seconds
+            let answerSelected = false;
+            let wrongAnswers = []; 
+
+            // --- 3. DOM ELEMENTS ---
+            const questionCounterEl = document.getElementById('quiz-question-counter');
+            const timerEl = document.getElementById('quiz-timer');
+            const questionTextEl = document.getElementById('quiz-question-text');
+            const optionsContainerEl = document.getElementById('quiz-options-container');
+            const nextQuestionBtn = document.getElementById('next-question-btn');
+            const finishQuizBtn = document.getElementById('finish-quiz-btn');
+            const difficultyDisplayEl = document.getElementById('quiz-difficulty-display'); 
+
+            // --- 4. TIMER FUNCTIONS ---
+            function startTimer() {
+                timeRemaining = 90; 
+                answerSelected = false;
+                timerEl.textContent = '01:30';
+                timerEl.classList.remove('text-red-600', 'bg-red-100'); 
+                timerEl.classList.add('text-gray-800', 'bg-gray-100');
+                
+                clearInterval(timerInterval); 
+
+                timerInterval = setInterval(() => {
+                    timeRemaining--;
+                    
+                    const minutes = Math.floor(timeRemaining / 60).toString().padStart(2, '0');
+                    const seconds = (timeRemaining % 60).toString().padStart(2, '0');
+                    timerEl.textContent = `${minutes}:${seconds}`;
+
+                    if (timeRemaining <= 10) {
+                        timerEl.classList.add('text-red-600', 'bg-red-100'); 
+                        timerEl.classList.remove('text-gray-800', 'bg-gray-100');
+                    }
+
+                    if (timeRemaining <= 0) {
+                        clearInterval(timerInterval);
+                        timerEl.textContent = '00:00';
+                        timeUp();
+                    }
+                }, 1000);
+            }
+
+            function stopTimer() {
+                clearInterval(timerInterval);
+            }
+
+            // --- 5. QUIZ FUNCTIONS ---
+            
+            function timeUp() {
+                answerSelected = true; 
+                nextQuestionBtn.disabled = false; 
+                
+                const question = quizQuestions[currentQuestionIndex];
+                const correctAnswer = question.a;
+
+                wrongAnswers.push({
+                    q: question.q,
+                    selected: "Time's Up",
+                    correct: correctAnswer
+                });
+
+                const allOptionBtns = optionsContainerEl.querySelectorAll('.quiz-option-btn');
+                allOptionBtns.forEach(btn => {
+                    btn.disabled = true;
+                    if (btn.textContent === correctAnswer) {
+                        btn.classList.add('!border-green-500', '!bg-green-100');
+                    }
+                });
+            }
+
+            function displayQuestion() {
+                answerSelected = false;
+                nextQuestionBtn.disabled = true;
+
+                const question = quizQuestions[currentQuestionIndex];
+                
+                questionCounterEl.textContent = `Question ${currentQuestionIndex + 1} of ${quizQuestions.length}`;
+                questionTextEl.textContent = question.q;
+                
+                optionsContainerEl.innerHTML = '';
+                
+                question.o.forEach(optionText => {
+                    const button = document.createElement('button');
+                    button.className = "quiz-option-btn w-full text-left text-lg p-5 border-2 border-gray-300 rounded-lg hover:bg-indigo-50 hover:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all";
+                    button.textContent = optionText;
+                    button.addEventListener('click', () => selectAnswer(button, optionText, question.a));
+                    optionsContainerEl.appendChild(button);
+                });
+
+                startTimer();
+            }
+
+            function selectAnswer(buttonEl, selectedAnswer, correctAnswer) {
+                if (answerSelected) return; 
+                
+                stopTimer();
+                answerSelected = true;
+                nextQuestionBtn.disabled = false;
+                
+                const allOptionBtns = optionsContainerEl.querySelectorAll('.quiz-option-btn');
+                allOptionBtns.forEach(btn => {
+                    btn.disabled = true;
+                });
+
+                if (selectedAnswer === correctAnswer) {
+                    score++;
+                    buttonEl.classList.add('!border-green-500', '!bg-green-100', 'ring-2', 'ring-green-500');
+                } else {
+                    buttonEl.classList.add('!border-red-500', '!bg-red-100', 'ring-2', 'ring-red-500');
+                    
+                    allOptionBtns.forEach(btn => {
+                        if (btn.textContent === correctAnswer) {
+                            btn.classList.add('!border-green-500', '!bg-green-100');
+                        }
+                    });
+
+                    wrongAnswers.push({
+                        q: quizQuestions[currentQuestionIndex].q,
+                        selected: selectedAnswer,
+                        correct: correctAnswer
+                    });
+                }
+            }
+
+            function handleNextQuestion() {
+                currentQuestionIndex++;
+                
+                if (currentQuestionIndex < quizQuestions.length) {
+                    displayQuestion();
+                } else {
+                    finishQuiz();
+                }
+            }
+
+            function finishQuiz() {
+                stopTimer();
+                
+                nextQuestionBtn.classList.add('hidden');
+                finishQuizBtn.classList.remove('hidden');
+
+                localStorage.setItem('quizScore', score);
+                localStorage.setItem('quizTotal', quizQuestions.length);
+                localStorage.setItem('quizWrongAnswers', JSON.stringify(wrongAnswers));
+            }
+
+            // --- 6. EVENT LISTENERS ---
+            nextQuestionBtn.addEventListener('click', handleNextQuestion);
+            
+            // --- 7. INITIALIZE ---
+            difficultyDisplayEl.textContent = "Difficulty: Hard"; // Set display text
+            displayQuestion(); 
+        });
+    </script>
+
+</body>
+</html>

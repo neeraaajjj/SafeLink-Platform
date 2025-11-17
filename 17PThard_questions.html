@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeLink - Quiz (Penetration Testing Hard)</title>
+    <!-- 1. Include Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 2. Include Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- 3. Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for sidebar */
+        aside::-webkit-scrollbar {
+            width: 6px;
+        }
+        aside::-webkit-scrollbar-track {
+            background: #1f2937; /* gray-800 */
+        }
+        aside::-webkit-scrollbar-thumb {
+            background: #4b5563; /* gray-600 */
+            border-radius: 3px;
+        }
+        aside::-webkit-scrollbar-thumb:hover {
+            background: #6b7280; /* gray-500 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 antialiased">
+
+    <div class="flex h-screen bg-gray-100">
+        <!-- Sidebar -->
+        <aside class="w-64 flex-shrink-0 bg-gray-900 text-gray-300 p-6 flex flex-col gap-2 overflow-y-auto hidden md:flex">
+            <h2 class="text-2xl font-bold text-white mb-6">Topics</h2>
+            
+            <!-- Topic List (Copied from previous file for consistency) -->
+             <a href="Linux.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Linux</span>
+            </a>
+            <a href="EthicalHacking.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5.026a11.954 11.954 0 01-1.122 3.993A11.954 11.954 0 01.5 13.5c0 1.78.498 3.444 1.38 4.848A11.95 11.95 0 0110 18.056a11.95 11.95 0 018.12-4.708A11.954 11.954 0 0119.5 13.5a11.954 11.954 0 01-1.644-4.481A11.954 11.954 0 0117.834 5.026A11.954 11.954 0 0110 1.944zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Ethical Hacking</span>
+            </a>
+            <a href="Penetration testing.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M9 4.804A7.968 7.968 0 001.953 10c0 1.042.196 2.04.543 2.968l1.04-1.04A6.012 6.012 0 013 10c0-1.654.67-3.14 1.757-4.243l1.04-1.04C5.17 4.97 4.51 5 4 5c-.17 0-.337.016-.5.042zM10 18.056a7.968 7.968 0 007.047-5.196c0-1.042-.196-2.04-.543-2.968l-1.04 1.04A6.012 6.012 0 0117 10c0 1.654-.67 3.14-1.757 4.243l-1.04 1.04C14.83 15.03 15.49 15 16 15c.17 0 .337-.016.5-.042A7.968 7.968 0 0010 18.056zM10 3a7 7 0 100 14 7 7 0 000-14zM10 5a5 5 0 100 10 5 5 0 000-10z" /></svg>
+                <span class="truncate">Penetration Testing</span>
+            </a>
+            <a href="Security.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Security</span>
+            </a>
+            <a href="cloud security.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.739-1.988A5.5 5.5 0 0117.5 16H5.5z" /></svg>
+                <span class="truncate">Cloud Security</span>
+            </a>
+            <a href="cryptography.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Cryptography</span>
+            </a>
+            <a href="Network security.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg>
+                <span class="truncate">Network Security</span>
+            </a>
+            <a href="Web security.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm2 0v8h10V5H5z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Web Security</span>
+            </a>
+            </a>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="flex-1 flex flex-col h-screen overflow-hidden">
+            <!-- Header -->
+            <header class="bg-white shadow-md border-b border-gray-200">
+                <nav class="flex justify-between items-center p-5">
+                    <div class="text-2xl font-extrabold text-indigo-600">
+                        SAFELINK-PLATFORM
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <a href="learning.html" class="text-gray-600 hover:text-indigo-600 font-medium">LEARNING</a>
+                        <a href="index.html" class="text-indigo-600 font-semibold">QUIZ</a> <!-- Active link -->
+                        <a href="roadmap.html" class="text-gray-600 hover:text-indigo-600 font-medium">ROADMAP</a>
+                    </div>
+                    <div class="w-10 h-10 bg-gray-300 rounded-full">
+                         <!-- Profile Pic Placeholder -->
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Content Area: This is the main content for THIS page -->
+            <main class="flex-1 overflow-y-auto p-8">
+                
+                <!-- Sub-View: Quiz Questions -->
+                <!-- Based on Page 2 of the sketch -->
+                <div id="quiz-question-view" class="max-w-4xl mx-auto">
+                    <div class="bg-white p-8 rounded-xl shadow-2xl">
+                        <!-- Quiz Header -->
+                        <div class="flex justify-between items-center mb-6 pb-4 border-b">
+                            <div id="quiz-question-counter" class="text-xl font-semibold text-gray-700">Question 1 of 20</div>
+                            <div id="quiz-timer" class="text-2xl font-bold text-gray-800 bg-gray-100 px-4 py-2 rounded-lg">
+                                02:00
+                            </div>
+                        </div>
+
+                        <!-- Question -->
+                        <h2 id="quiz-question-text" class="text-2xl md:text-3xl font-bold text-gray-900 mb-8" style="min-height: 100px;">
+                            Loading question...
+                        </h2>
+
+                        <!-- Answers -->
+                        <div id="quiz-options-container" class="flex flex-col gap-4">
+                            <!-- Options will be dynamically inserted here -->
+                        </div>
+                    </div>
+
+                    <!-- Footer from sketch (Difficulty & Next Button) -->
+                    <div class="mt-8 p-4 bg-white rounded-lg shadow-lg flex justify-between items-center">
+                        <span id="quiz-difficulty-display" class="text-gray-700 font-semibold text-lg">Difficulty: Hard</span>
+                        
+                        <!-- This is a regular button now, not a link -->
+                        <button id="next-question-btn" class="bg-indigo-600 text-white font-medium py-2 px-6 rounded-lg hover:bg-indigo-700 transition-all disabled:opacity-50" disabled>
+                            Next
+                        </button>
+                        
+                        <!-- This link will be hidden until the last question -->
+                        <a href="index.html" id="finish-quiz-btn" class="hidden bg-green-600 text-white font-medium py-2 px-6 rounded-lg hover:bg-green-700 transition-all">
+                            Finish
+                        </a>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript for Quiz Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- 1. MOCK QUIZ DATA ---
+            // 20 Hard Penetration Testing Questions
+            const quizQuestions = [
+                { q: "What is the primary difference between a 'reverse shell' and a 'bind shell'?", o: ["Reverse: Target connects to attacker. Bind: Attacker connects to target.", "Bind: Target connects to attacker. Reverse: Attacker connects to target.", "Reverse shells are encrypted, bind shells are not.", "Bind shells are for Windows, reverse shells are for Linux."], a: "Reverse: Target connects to attacker. Bind: Attacker connects to target." },
+                { q: "What is a 'Pass-the-Hash' (PtH) attack?", o: ["Using a user's NTLM hash to authenticate without needing the password", "Cracking a password hash", "Passing a hash through a web form", "A type of denial of service attack"], a: "Using a user's NTLM hash to authenticate without needing the password" },
+                { q: "What is 'Golden Ticket' attack in Active Directory?", o: ["Forging a Kerberos Ticket Granting Ticket (TGT) with full admin rights", "Finding a valid admin password", "A type of phishing email", "A physical access badge"], a: "Forging a Kerberos Ticket Granting Ticket (TGT) with full admin rights" },
+                { q: "What is 'ASLR' (Address Space Layout Randomization) designed to prevent?", o: ["Buffer overflow exploits by randomizing memory locations", "SQL Injection attacks", "Cross-Site Scripting (XSS)", "Phishing attacks"], a: "Buffer overflow exploits by randomizing memory locations" },
+                { q: "What is 'SQLMap' primarily used for?", o: ["Automating the process of finding and exploiting SQL Injection flaws", "Mapping SQL database structures", "Creating SQL databases", "Scanning for open SQL ports"], a: "Automating the process of finding and exploiting SQL Injection flaws" },
+                { q: "What is an 'Insecure Direct Object Reference' (IDOR) vulnerability?", o: ["Accessing data by changing a parameter value (e.g., user_id=124)", "Injecting an object into a web page", "A type of XSS", "A server misconfiguration"], a: "Accessing data by changing a parameter value (e.g., user_id=124)" },
+                { q: "What is 'Server-Side Request Forgery' (SSRF)?", o: ["An attack where the server is forced to make requests to other services", "A forgery of a server's SSL certificate", "A client-side attack", "A type of SQL Injection"], a: "An attack where the server is forced to make requests to other services" },
+                { q: "What is 'XXE' (XML External Entity) Injection?", o: ["An attack that exploits an XML parser to read local files or make requests", "A type of XSS", "A file upload vulnerability", "A denial of service attack"], a: "An attack that exploits an XML parser to read local files or make requests" },
+                { q: "What is 'BloodHound' used for in an Active Directory pentest?", o: ["To visualize attack paths and relationships within Active Directory", "To crack AD passwords", "To scan for open ports on domain controllers", "To create new user accounts"], a: "To visualize attack paths and relationships within Active Directory" },
+                { q: "What is 'ROP' (Return-Oriented Programming)?", o: ["A technique to bypass DEP/NX by chaining existing code 'gadgets'", "A reporting-oriented programming language", "A pentest methodology", "A type of reverse shell"], a: "A technique to bypass DEP/NX by chaining existing code 'gadgets'" },
+                { q: "What is the purpose of an 'executive summary' in a pentest report?", o: ["To provide a high-level, non-technical overview for management", "To list all exploits used", "A detailed technical breakdown of each finding", "A list of all team members"], a: "To provide a high-level, non-technical overview for management" },
+                { q: "What is 'Fuzzing'?", o: ["Sending large amounts of invalid or random data to a program to find crashes", "A password guessing technique", "A type of reconnaissance", "A social engineering method"], a: "Sending large amounts of invalid or random data to a program to find crashes" },
+                { q: "What is the 'Same-Origin Policy' (SOP) in web browsers?", o: ["A security policy that restricts scripts on one origin from accessing data on another", "A policy that all web pages must look the same", "A firewall rule", "A server configuration setting"], a: "A security policy that restricts scripts on one origin from accessing data on another" },
+                { q: "How can 'CORS' (Cross-Origin Resource Sharing) misconfiguration be exploited?", o: ["It can allow a malicious site to read data from a vulnerable site", "It can cause a denial of service", "It leads to SQL injection", "It allows for buffer overflows"], a: "It can allow a malicious site to read data from a vulnerable site" },
+                { q: "What is 'DNS Tunneling'?", o: ["A method to exfiltrate data or bypass firewalls using DNS queries", "A secure VPN over DNS", "A way to configure DNS servers", "An attack that crashes a DNS server"], a: "A method to exfiltrate data or bypass firewalls using DNS queries" },
+                { q: "What is a 'Web Shell'?", o: ["A malicious script uploaded to a server to enable remote command execution", "A web-based terminal client", "A secure version of Telnet", "A server configuration file"], a: "A malicious script uploaded to a server to enable remote command execution" },
+                { q: "What is a 'Race Condition' vulnerability?", o: ["A flaw where the system's behavior depends on the sequence or timing of events", "A hacking competition", "A tool for scanning networks faster", "A type of buffer overflow"], a: "A flaw where the system's behavior depends on the sequence or timing of events" },
+                { q: "What is 'Responder' (by SpiderLabs)?", o: ["A tool for poisoning LLMNR/NBT-NS and relaying NTLMv2 hashes", "A log analysis tool", "A web server", "A malware analysis sandbox"], a: "A tool for poisoning LLMNR/NBT-NS and relaying NTLMv2 hashes" },
+                { q: "What is 'CVSS' (Common Vulnerability Scoring System)?", o: ["A standard for rating the severity of vulnerabilities", "A database of common exploits", "A security configuration standard", "A list of secure coding practices"], a: "A standard for rating the severity of vulnerabilities" },
+                { q: "What is 'OPSEC' (Operations Security) in pentesting?", o: ["The practice of protecting your own activities to avoid detection", "A security certification", "A specific pentest methodology", "A tool for reporting findings"], a: "The practice of protecting your own activities to avoid detection" }
+            ];
+
+            // --- 2. STATE VARIABLES ---
+            let currentQuestionIndex = 0;
+            let score = 0;
+            let timerInterval;
+            let timeRemaining = 120; // 120 seconds (2 minutes) for Hard
+            let answerSelected = false;
+            let wrongAnswers = []; // To store mistakes for analysis
+
+            // --- 3. DOM ELEMENTS ---
+            const questionCounterEl = document.getElementById('quiz-question-counter');
+            const timerEl = document.getElementById('quiz-timer');
+            const questionTextEl = document.getElementById('quiz-question-text');
+            const optionsContainerEl = document.getElementById('quiz-options-container');
+            const nextQuestionBtn = document.getElementById('next-question-btn');
+            const finishQuizBtn = document.getElementById('finish-quiz-btn');
+
+            // --- 4. TIMER FUNCTIONS ---
+            function startTimer() {
+                timeRemaining = 120; // Reset to 120 seconds for each question
+                answerSelected = false;
+                timerEl.textContent = '02:00';
+                timerEl.classList.remove('text-red-600', 'bg-red-100'); // Reset color
+                timerEl.classList.add('text-gray-800', 'bg-gray-100');
+                
+                clearInterval(timerInterval); // Clear any existing timer
+
+                timerInterval = setInterval(() => {
+                    timeRemaining--;
+                    
+                    const minutes = Math.floor(timeRemaining / 60).toString().padStart(2, '0');
+                    const seconds = (timeRemaining % 60).toString().padStart(2, '0');
+                    timerEl.textContent = `${minutes}:${seconds}`;
+
+                    if (timeRemaining <= 10) {
+                        timerEl.classList.add('text-red-600', 'bg-red-100'); // Warning color
+                        timerEl.classList.remove('text-gray-800', 'bg-gray-100');
+                    }
+
+                    if (timeRemaining <= 0) {
+                        clearInterval(timerInterval);
+                        timerEl.textContent = '00:00';
+                        timeUp();
+                    }
+                }, 1000);
+            }
+
+            function stopTimer() {
+                clearInterval(timerInterval);
+            }
+
+            // --- 5. QUIZ FUNCTIONS ---
+            
+            // Function to run when time runs out
+            function timeUp() {
+                answerSelected = true; // Lock answers
+                nextQuestionBtn.disabled = false; // Enable 'Next'
+                
+                const question = quizQuestions[currentQuestionIndex];
+                const correctAnswer = question.a;
+
+                // Record the wrong answer
+                wrongAnswers.push({
+                    q: question.q,
+                    selected: "Time's Up",
+                    correct: correctAnswer
+                });
+
+                const allOptionBtns = optionsContainerEl.querySelectorAll('.quiz-option-btn');
+                allOptionBtns.forEach(btn => {
+                    btn.disabled = true;
+                    // Highlight the correct answer
+                    if (btn.textContent === correctAnswer) {
+                        btn.classList.add('!border-green-500', '!bg-green-100');
+                    }
+                });
+            }
+
+            // Function to display the current question and options
+            function displayQuestion() {
+                // Reset state
+                answerSelected = false;
+                nextQuestionBtn.disabled = true;
+
+                // Get the current question object
+                const question = quizQuestions[currentQuestionIndex];
+                
+                // Update counter and question text
+                questionCounterEl.textContent = `Question ${currentQuestionIndex + 1} of ${quizQuestions.length}`;
+                questionTextEl.textContent = question.q;
+                
+                // Clear old options
+                optionsContainerEl.innerHTML = '';
+                
+                // Create new option buttons
+                question.o.forEach(optionText => {
+                    const button = document.createElement('button');
+                    button.className = "quiz-option-btn w-full text-left text-lg p-5 border-2 border-gray-300 rounded-lg hover:bg-indigo-50 hover:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all";
+                    button.textContent = optionText;
+                    button.addEventListener('click', () => selectAnswer(button, optionText, question.a));
+                    optionsContainerEl.appendChild(button);
+                });
+
+                // Start the timer for this question
+                startTimer();
+            }
+
+            // Function to run when an answer is clicked
+            function selectAnswer(buttonEl, selectedAnswer, correctAnswer) {
+                if (answerSelected) return; // Prevent changing answer
+                
+                // 1. Stop timer and update state
+                stopTimer();
+                answerSelected = true;
+                nextQuestionBtn.disabled = false;
+                
+                // 2. Disable all option buttons
+                const allOptionBtns = optionsContainerEl.querySelectorAll('.quiz-option-btn');
+                allOptionBtns.forEach(btn => {
+                    btn.disabled = true;
+                });
+
+                // 3. Highlight correct/incorrect answers
+                if (selectedAnswer === correctAnswer) {
+                    score++;
+                    buttonEl.classList.add('!border-green-500', '!bg-green-100', 'ring-2', 'ring-green-500');
+                } else {
+                    // Selected wrong answer
+                    buttonEl.classList.add('!border-red-500', '!bg-red-100', 'ring-2', 'ring-red-500');
+                    
+                    // Highlight the correct one
+                    allOptionBtns.forEach(btn => {
+                        if (btn.textContent === correctAnswer) {
+                            btn.classList.add('!border-green-500', '!bg-green-100');
+                        }
+                    });
+
+                    // Add to wrong answer list for analysis
+                    wrongAnswers.push({
+                        q: quizQuestions[currentQuestionIndex].q,
+                        selected: selectedAnswer,
+                        correct: correctAnswer
+                    });
+                }
+            }
+
+            // Function to handle clicking the 'Next' button
+            function handleNextQuestion() {
+                currentQuestionIndex++;
+                
+                if (currentQuestionIndex < quizQuestions.length) {
+                    // There are more questions
+                    displayQuestion();
+                } else {
+                    // This was the last question
+                    finishQuiz();
+                }
+            }
+
+            // Function to run on the last question
+            function finishQuiz() {
+                stopTimer();
+                
+                // Hide the 'Next' button and show the 'Finish' button
+                nextQuestionBtn.classList.add('hidden');
+                finishQuizBtn.classList.remove('hidden');
+
+                // Save results to localStorage for the results page
+                localStorage.setItem('quizScore', score);
+                localStorage.setItem('quizTotal', quizQuestions.length);
+                localStorage.setItem('quizWrongAnswers', JSON.stringify(wrongAnswers));
+            }
+
+            // --- 6. EVENT LISTENERS ---
+            nextQuestionBtn.addEventListener('click', handleNextQuestion);
+            
+            // The 'Finish' button is a link, so it doesn't need a click listener
+            // to navigate, but it will save data upon being revealed.
+
+            // --- 7. INITIALIZE ---
+            displayQuestion(); // Display the first question on page load
+        });
+    </script>
+
+</body>
+</html>

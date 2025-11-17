@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-TR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeLink - Linux Roadmap</title> <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for sidebar */
+        aside::-webkit-scrollbar {
+            width: 6px;
+        }
+        aside::-webkit-scrollbar-track {
+            background: #1f2937; /* gray-800 */
+        }
+        aside::-webkit-scrollbar-thumb {
+            background: #4b5563; /* gray-600 */
+            border-radius: 3px;
+        }
+        aside::-webkit-scrollbar-thumb:hover {
+            background: #6b7280; /* gray-500 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 antialiased">
+
+    <div class="flex h-screen bg-gray-100">
+        <aside class="w-64 flex-shrink-0 bg-gray-900 text-gray-300 p-6 flex flex-col gap-2 overflow-y-auto">
+            <h2 class="text-2xl font-bold text-white mb-6">Topics</h2>
+            
+            <a href="Linux.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Linux</span>
+            </a>
+            <a href="EthicalHacking.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5.026a11.954 11.954 0 01-1.122 3.993A11.954 11.954 0 01.5 13.5c0 1.78.498 3.444 1.38 4.848A11.95 11.95 0 0110 18.056a11.95 11.95 0 018.12-4.708A11.954 11.954 0 0119.5 13.5a11.954 11.954 0 01-1.644-4.481A11.954 11.954 0 0117.834 5.026A11.954 11.954 0 0110 1.944zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Ethical Hacking</span>
+            </a>
+            <a href="Penetration testing.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M9 4.804A7.968 7.968 0 001.953 10c0 1.042.196 2.04.543 2.968l1.04-1.04A6.012 6.012 0 013 10c0-1.654.67-3.14 1.757-4.243l1.04-1.04C5.17 4.97 4.51 5 4 5c-.17 0-.337.016-.5.042zM10 18.056a7.968 7.968 0 007.047-5.196c0-1.042-.196-2.04-.543-2.968l-1.04 1.04A6.012 6.012 0 0117 10c0 1.654-.67 3.14-1.757 4.243l-1.04 1.04C14.83 15.03 15.49 15 16 15c.17 0 .337-.016.5-.042A7.968 7.968 0 0010 18.056zM10 3a7 7 0 100 14 7 7 0 000-14zM10 5a5 5 0 100 10 5 5 0 000-10z" /></svg>
+                <span class="truncate">Penetration Testing</span>
+            </a>
+            <a href="Security.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Security</span>
+            </a>
+            <a href="cloud security.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.739-1.988A5.5 5.5 0 0117.5 16H5.5z" /></svg>
+                <span class="truncate">Cloud Security</span>
+            </a>
+            <a href="cryptography.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Cryptography</span>
+            </a>
+            <a href="Network security.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg>
+                <span class="truncate">Network Security</span>
+            </a>
+            <a href="Web security.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm2 0v8h10V5H5z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Web Security</span>
+            </a>
+            
+            </aside>
+
+        <div class="flex-1 flex flex-col h-screen overflow-hidden">
+            <header class="bg-white shadow-md border-b border-gray-200">
+                <nav class="flex justify-between items-center p-5">
+                    <div class="text-2xl font-extrabold text-indigo-600">
+                        SAFELINK-PLATFORM
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <a href="learning.html" class="text-gray-600 hover:text-indigo-600 font-medium">LEARNING</a>
+                        <a href="index.html" class="text-gray-600 hover:text-indigo-600 font-medium">QUIZ</a>
+                        <a href="roadmap.html" class="text-indigo-600 font-semibold">ROADMAP</a> </div>
+                    <div class="w-10 h-10 bg-gray-300 rounded-full">
+                         </div>
+                </nav>
+            </header>
+
+            <main class="flex-1 overflow-y-auto p-8">
+
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-6 text-center">The Linux Roadmap</h1>
+                    <p class="text-lg text-gray-600 mb-10 text-center">A comprehensive journey from beginner to power user and system administrator.</p>
+
+                    <div class="space-y-8">
+
+                        <div class="bg-white p-8 rounded-xl shadow-2xl">
+                            <h2 class="text-2xl font-bold text-indigo-700 mb-4">Stage 1: The Basics (User Land)</h2>
+                            <p class="text-gray-600 mb-5">This is your starting point. The goal is to get comfortable in a Linux environment, understand its philosophy, and master the command line.</p>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Key Concepts</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>What is Linux?:</strong> Understand the Kernel vs. a Distribution (Distro).</li>
+                                <li><strong>Choosing a Distro:</strong> Start with a user-friendly one like <strong>Ubuntu</strong>, <strong>Linux Mint</strong>, or <strong>Fedora</strong>.</li>
+                                <li><strong>Installation:</strong> Learn to install Linux on a <strong>Virtual Machine (VM)</strong> (e.g., VirtualBox, VMware) or as a dual boot.</li>
+                                <li><strong>The Shell:</strong> Your main interface. Learn to use <strong>Bash</strong> or Zsh.</li>
+                                <li><strong>Basic Commands:</strong> Master navigation and file handling: <strong>`ls`</strong> (list), <strong>`cd`</strong> (change directory), <strong>`pwd`</strong> (print working directory), <strong>`cp`</strong> (copy), <strong>`mv`</strong> (move), <strong>`rm`</strong> (remove), <strong>`mkdir`</strong> (make directory).</li>
+                                <li><strong>Getting Help:</strong> Learn how to learn: <strong>`man`</strong> (manual pages), <strong>`--help`</strong>, and <strong>`apropos`</strong>.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-xl shadow-2xl">
+                            <h2 class="text-2xl font-bold text-indigo-700 mb-4">Stage 2: File System & Permissions</h2>
+                            <p class="text-gray-600 mb-5">Understand how Linux organizes files and, most importantly, controls access to them. This is critical for both security and proper system function.</p>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Key Concepts</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Filesystem Hierarchy Standard (FHS):</strong> Learn the purpose of main directories: <strong>`/`</strong> (root), <strong>`/bin`</strong> (binaries), <strong>`/etc`</strong> (configuration), <strong>`/home`</strong> (user directories), <strong>`/var`</strong> (variable files, like logs), <strong>`/tmp`</strong> (temporary files).</li>
+                                <li><strong>Permissions Model:</strong> Understand Read (r), Write (w), Execute (x) for Owner, Group, and Other.</li>
+                                <li><strong>Permission Commands:</strong> Learn <strong>`chmod`</strong> (to change permissions, e.g., `chmod 755 script.sh`), <strong>`chown`</strong> (to change owner), and <strong>`chgrp`</strong> (to change group).</li>
+                                <li><strong>Links:</strong> Differentiate between <strong>Hard Links</strong> and <strong>Soft Links</strong> (symlinks) and how to create them with <strong>`ln`</strong>.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white p-8 rounded-xl shadow-2xl">
+                            <h2 class="text-2xl font-bold text-indigo-700 mb-4">Stage 3: System Administration</h2>
+                            <p class="text-gray-600 mb-5">Move from being a user to being an administrator. This involves managing software, users, services, and the network.</p>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Key Concepts</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Package Management:</strong> The core of software management. Learn your distro's tool: <strong>`apt`</strong> (Debian/Ubuntu) or <strong>`dnf`</strong> / <strong>`yum`</strong> (Fedora/RHEL).</li>
+                                <li><strong>User & Group Management:</strong> Create, modify, and delete users and groups: <strong>`useradd`</strong>, <strong>`usermod`</strong>, <strong>`passwd`</strong>, <strong>`groupadd`</strong>. Understand <strong>`sudo`</strong> and the `/etc/sudoers` file.</li>
+                                <li><strong>Process Management:</strong> See what's running: <strong>`ps`</strong>, <strong>`top`</strong>, <strong>`htop`</strong>. Learn to stop processes: <strong>`kill`</strong>, <strong>`pkill`</strong>.</li>
+                                <li><strong>Service Management:</strong> Control background services (daemons) with <strong>`systemd`</strong>. Use <strong>`systemctl start`</strong>, <strong>`systemctl stop`</strong>, <strong>`systemctl enable`</strong>, <strong>`systemctl status`</strong>.</li>
+                                <li><strong>Networking:</strong> Configure and check network settings: <strong>`ip addr`</strong>, <strong>`ip route`</strong>. Test connectivity: <strong>`ping`</strong>, <strong>`traceroute`</strong>. Check open ports: <strong>`ss`</strong> or <strong>`netstat`</strong>.</li>
+                                <li><strong>Text Editors:</strong> Get proficient with a command-line editor. <strong>Nano</strong> is easy. <strong>Vim</strong> or <strong>Neovim</strong> is powerful and universally available.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-xl shadow-2xl">
+                            <h2 class="text-2xl font-bold text-indigo-700 mb-4">Stage 4: Shell Scripting & Automation</h2>
+                            <p class="text-gray-600 mb-5">This is where you make Linux work for you. Automate repetitive tasks by writing scripts that combine the commands you've already learned.</p>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Key Concepts</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Bash Scripting:</strong> Create `.sh` files. Start with the "shebang": `#!/bin/bash`.</li>
+                                <li><strong>Scripting Basics:</strong> Learn variables, command-line arguments (<strong>`$1`</strong>, <strong>`$@`</strong>), <strong>`if`</strong> statements, <strong>`for`</strong> and <strong>`while`</strong> loops.</li>
+                                <li><strong>Piping & Redirection:</strong> The core philosophy. Use <strong>`|`</strong> to pipe output of one command to another. Use <strong>`>`</strong>, <strong>`>>`</strong>, and <strong>`2>`</strong> to redirect Standard Output and Standard Error.</li>
+                                <li><strong>Text Processing Tools:</strong> The "Holy Trinity" of text-fu: <strong>`grep`</strong> (search), <strong>`sed`</strong> (stream editor), and <strong>`awk`</strong> (pattern scanning/processing). Also <strong>`cut`</strong>, <strong>`sort`</strong>, <strong>`uniq`</strong>.</li>
+                                <li><strong>Task Scheduling:</strong> Automate scripts to run at specific times using <strong>`cron`</strong> and <strong>`crontab -e`</strong>.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-xl shadow-2xl">
+                            <h2 class="text-2xl font-bold text-indigo-700 mb-4">Stage 5: Advanced Concepts & Specialization</h2>
+                            <p class="text-gray-600 mb-5">You're now a proficient user. This stage is about understanding the system's core, securing it, and branching out into specialized career paths.</p>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Key Concepts</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>The Kernel:</strong> Understand what the kernel does. Learn to view kernel messages with <strong>`dmesg`</strong> and manage kernel modules with <strong>`lsmod`</strong> / <strong>`modprobe`</strong>.</li>
+                                <li><strong>Compiling from Source:</strong> The "old school" way to install: <strong>`./configure`</strong>, <strong>`make`</strong>, <strong>`sudo make install`</strong>.</li>
+                                <li><strong>Security:</strong> Basic firewall setup with <strong>`ufw`</strong> (Uncomplicated Firewall) or <strong>`firewalld`</strong>. Understand <strong>SELinux</strong> or <strong>AppArmor</strong> at a high level.</li>
+                                <li><strong>Containers:</strong> The future of application deployment. Get a basic understanding of <strong>Docker</strong> or <strong>Podman</strong> (e.g., `docker run`, `docker ps`).</li>
+                                <li><strong>Specializations:</strong> Your path forward. Use your Linux skills to become a <strong>SysAdmin</strong>, <strong>DevOps Engineer</strong>, <strong>Cloud Engineer</strong>, <strong>Cybersecurity Analyst</strong>, or <strong>Embedded Systems Developer</strong>.</li>
+                            </ul>
+                        </div>
+                         <div class="pt-6">
+                            <a href="learning.html" class="block w-full bg-indigo-600 text-white text-xl font-bold py-4 px-6 rounded-lg hover:bg-indigo-700 transition-all shadow-lg hover:shadow-indigo-400/50 transform hover:-translate-y-1 text-center">
+                                Watch Lectures
+                            </a>
+                        </div>
+                        
+                         <div class="pt-6">
+                            <!-- **** THIS IS THE FIX **** -->
+                            <!-- I changed "quiz_start.html" to "index.html" -->
+                            <a href="index.html" class="block w-full bg-indigo-600 text-white text-xl font-bold py-4 px-6 rounded-lg hover:bg-indigo-700 transition-all shadow-lg hover:shadow-indigo-400/50 transform hover:-translate-y-1 text-center">
+                                Take Test
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                </main>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeLink - Roadmap</title> <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for sidebar */
+        aside::-webkit-scrollbar {
+            width: 6px;
+        }
+        aside::-webkit-scrollbar-track {
+            background: #1f2937; /* gray-800 */
+        }
+        aside::-webkit-scrollbar-thumb {
+            background: #4b5563; /* gray-600 */
+            border-radius: 3px;
+        }
+        aside::-webkit-scrollbar-thumb:hover {
+            background: #6b7280; /* gray-500 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 antialiased">
+
+    <div class="flex h-screen bg-gray-100">
+        <aside class="w-64 flex-shrink-0 bg-gray-900 text-gray-300 p-6 flex flex-col gap-2 overflow-y-auto">
+            <h2 class="text-2xl font-bold text-white mb-6">Topics</h2>
+            
+            <a href="#" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Linux</span>
+            </a>
+            <a href="#" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5.026a11.954 11.954 0 01-1.122 3.993A11.954 11.954 0 01.5 13.5c0 1.78.498 3.444 1.38 4.848A11.95 11.95 0 0110 18.056a11.95 11.95 0 018.12-4.708A11.954 11.954 0 0119.5 13.5a11.954 11.954 0 01-1.644-4.481A11.954 11.954 0 0117.834 5.026A11.954 11.954 0 0110 1.944zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Ethical Hacking</span>
+            </a>
+            <a href="#" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M9 4.804A7.968 7.968 0 001.953 10c0 1.042.196 2.04.543 2.968l1.04-1.04A6.012 6.012 0 013 10c0-1.654.67-3.14 1.757-4.243l1.04-1.04C5.17 4.97 4.51 5 4 5c-.17 0-.337.016-.5.042zM10 18.056a7.968 7.968 0 007.047-5.196c0-1.042-.196-2.04-.543-2.968l-1.04 1.04A6.012 6.012 0 0117 10c0 1.654-.67 3.14-1.757 4.243l-1.04 1.04C14.83 15.03 15.49 15 16 15c.17 0 .337-.016.5-.042A7.968 7.968 0 0010 18.056zM10 3a7 7 0 100 14 7 7 0 000-14zM10 5a5 5 0 100 10 5 5 0 000-10z" /></svg>
+                <span class="truncate">Penetration Testing</span>
+            </a>
+            <a href="#" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Security</span>
+            </a>
+            <a href="#" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.739-1.988A5.5 5.5 0 0117.5 16H5.5z" /></svg>
+                <span class="truncate">Cloud Security</span>
+            </a>
+            <a href="#" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Cryptography</span>
+            </a>
+            <a href="#" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg>
+                <span class="truncate">Network Security</span>
+            </a>
+            <a href="#" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm2 0v8h10V5H5z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Web Security</span>
+            </a>
+        </aside>
+
+        <div class="flex-1 flex flex-col h-screen overflow-hidden">
+            <header class="bg-white shadow-md border-b border-gray-200">
+                <nav class="flex justify-between items-center p-5">
+                    <div class="text-2xl font-extrabold text-indigo-600">
+                        SAFELINK-PLATFORM
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <a href="learning.html" class="text-gray-600 hover:text-indigo-600 font-medium">LEARNING</a>
+                        <a href="index.html" class="text-gray-600 hover:text-indigo-600 font-medium">QUIZ</a>
+                        <a href="roadmap.html" class="text-indigo-600 font-semibold">ROADMAP</a>
+                    </div>
+                    <div class="w-10 h-10 bg-gray-300 rounded-full">
+                         </div>
+                </nav>
+            </header>
+
+            <main class="flex-1 overflow-y-auto p-8">
+
+                <div class="max-w-7xl mx-auto">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-6">Roadmap Topics</h1>
+                    <p class="text-lg text-gray-600 mb-10">Select a topic to see its detailed learning roadmap.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        
+                        <a href="Linux.html" class="group bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all transform flex items-center gap-5 hover:bg-indigo-50">
+                            <div class="flex-shrink-0 bg-gray-200 group-hover:bg-indigo-100 p-4 rounded-lg transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                            </div>
+                            <span class="text-xl font-semibold text-gray-800 group-hover:text-indigo-700">Linux</span>
+                        </a>
+
+                        <a href="EthicalHacking.html" class="group bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all transform flex items-center gap-5 hover:bg-indigo-50">
+                            <div class="flex-shrink-0 bg-gray-200 group-hover:bg-indigo-100 p-4 rounded-lg transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5.026a11.954 11.954 0 01-1.122 3.993A11.954 11.954 0 01.5 13.5c0 1.78.498 3.444 1.38 4.848A11.95 11.95 0 0110 18.056a11.95 11.95 0 018.12-4.708A11.954 11.954 0 0119.5 13.5a11.954 11.954 0 01-1.644-4.481A11.954 11.954 0 0117.834 5.026A11.954 11.954 0 0110 1.944zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" /></svg>
+                            </div>
+                            <span class="text-xl font-semibold text-gray-800 group-hover:text-indigo-700">Ethical Hacking</span>
+                        </a>
+
+                        <a href="Penetration testing.html" class="group bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all transform flex items-center gap-5 hover:bg-indigo-50">
+                            <div class="flex-shrink-0 bg-gray-200 group-hover:bg-indigo-100 p-4 rounded-lg transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path d="M9 4.804A7.968 7.968 0 001.953 10c0 1.042.196 2.04.543 2.968l1.04-1.04A6.012 6.012 0 013 10c0-1.654.67-3.14 1.757-4.243l1.04-1.04C5.17 4.97 4.51 5 4 5c-.17 0-.337.016-.5.042zM10 18.056a7.968 7.968 0 007.047-5.196c0-1.042-.196-2.04-.543-2.968l-1.04 1.04A6.012 6.012 0 0117 10c0 1.654-.67 3.14-1.757 4.243l-1.04 1.04C14.83 15.03 15.49 15 16 15c.17 0 .337-.016.5-.042A7.968 7.968 0 0010 18.056zM10 3a7 7 0 100 14 7 7 0 000-14zM10 5a5 5 0 100 10 5 5 0 000-10z" /></svg>
+                            </div>
+                            <span class="text-xl font-semibold text-gray-800 group-hover:text-indigo-700">Penetration Testing</span>
+                        </a>
+
+                        <a href="Security.html" class="group bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all transform flex items-center gap-5 hover:bg-indigo-50">
+                            <div class="flex-shrink-0 bg-gray-200 group-hover:bg-indigo-100 p-4 rounded-lg transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" /></svg>
+                            </div>
+                            <span class="text-xl font-semibold text-gray-800 group-hover:text-indigo-700">Security</span>
+                        </a>
+
+                        <a href="Cloud Security.html" class="group bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all transform flex items-center gap-5 hover:bg-indigo-50">
+                            <div class="flex-shrink-0 bg-gray-200 group-hover:bg-indigo-100 p-4 rounded-lg transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.739-1.988A5.5 5.5 0 0117.5 16H5.5z" /></svg>
+                            </div>
+                            <span class="text-xl font-semibold text-gray-800 group-hover:text-indigo-700">Cloud Security</span>
+                        </a>
+
+                        <a href="cryptography.html" class="group bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all transform flex items-center gap-5 hover:bg-indigo-50">
+                            <div class="flex-shrink-0 bg-gray-200 group-hover:bg-indigo-100 p-4 rounded-lg transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" /></svg>
+                            </div>
+                            <span class="text-xl font-semibold text-gray-800 group-hover:text-indigo-700">Cryptography</span>
+                        </a>
+
+                        <a href="Network security.html" class="group bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all transform flex items-center gap-5 hover:bg-indigo-50">
+                            <div class="flex-shrink-0 bg-gray-200 group-hover:bg-indigo-100 p-4 rounded-lg transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg>
+                            </div>
+                            <span class="text-xl font-semibold text-gray-800 group-hover:text-indigo-700">Network Security</span>
+                        </a>
+
+                        <a href="Web security.html" class="group bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all transform flex items-center gap-5 hover:bg-indigo-50">
+                            <div class="flex-shrink-0 bg-gray-200 group-hover:bg-indigo-100 p-4 rounded-lg transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm2 0v8h10V5H5z" clip-rule="evenodd" /></svg>
+                            </div>
+                            <span class="text-xl font-semibold text-gray-800 group-hover:text-indigo-700">Web Security</span>
+                        </a>
+
+                    </div>
+                    </div>
+            </main>
+        </div>
+    </div>
+    
+
+    </body>
+</html>

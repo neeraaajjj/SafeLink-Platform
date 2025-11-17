@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-TR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeLink - Ethical Hacking Roadmap</title> <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for sidebar */
+        aside::-webkit-scrollbar {
+            width: 6px;
+        }
+        aside::-webkit-scrollbar-track {
+            background: #1f2937; /* gray-800 */
+        }
+        aside::-webkit-scrollbar-thumb {
+            background: #4b5563; /* gray-600 */
+            border-radius: 3px;
+        }
+        aside::-webkit-scrollbar-thumb:hover {
+            background: #6b7280; /* gray-500 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 antialiased">
+
+    <div class="flex h-screen bg-gray-100">
+        <aside class="w-64 flex-shrink-0 bg-gray-900 text-gray-300 p-6 flex flex-col gap-2 overflow-y-auto">
+            <h2 class="text-2xl font-bold text-white mb-6">Topics</h2>
+            
+            <a href="Linux.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Linux</span>
+            </a>
+            <a href="EthicalHacking.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5.026a11.954 11.954 0 01-1.122 3.993A11.954 11.954 0 01.5 13.5c0 1.78.498 3.444 1.38 4.848A11.95 11.95 0 0110 18.056a11.95 11.95 0 018.12-4.708A11.954 11.954 0 0119.5 13.5a11.954 11.954 0 01-1.644-4.481A11.954 11.954 0 0117.834 5.026A11.954 11.954 0 0110 1.944zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Ethical Hacking</span>
+            </a>
+            <a href="Penetration testing.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M9 4.804A7.968 7.968 0 001.953 10c0 1.042.196 2.04.543 2.968l1.04-1.04A6.012 6.012 0 013 10c0-1.654.67-3.14 1.757-4.243l1.04-1.04C5.17 4.97 4.51 5 4 5c-.17 0-.337.016-.5.042zM10 18.056a7.968 7.968 0 007.047-5.196c0-1.042-.196-2.04-.543-2.968l-1.04 1.04A6.012 6.012 0 0117 10c0 1.654-.67 3.14-1.757 4.243l-1.04 1.04C14.83 15.03 15.49 15 16 15c.17 0 .337-.016.5-.042A7.968 7.968 0 0010 18.056zM10 3a7 7 0 100 14 7 7 0 000-14zM10 5a5 5 0 100 10 5 5 0 000-10z" /></svg>
+                <span class="truncate">Penetration Testing</span>
+            </a>
+            <a href="Security.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Security</span>
+            </a>
+            <a href="cloud security.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.739-1.988A5.5 5.5 0 0117.5 16H5.5z" /></svg>
+                <span class="truncate">Cloud Security</span>
+            </a>
+            <a href="cryptography.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Cryptography</span>
+            </a>
+            <a href="Network security.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg>
+                <span class="truncate">Network Security</span>
+            </a>
+            <a href="Web security.html" class="nav-topic group flex items-center gap-3 p-3 rounded-lg hover:bg-indigo-700 hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm2 0v8h10V5H5z" clip-rule="evenodd" /></svg>
+                <span class="truncate">Web Security</span>
+            </a>
+            
+            </a>
+            
+            </aside>
+
+        <div class="flex-1 flex flex-col h-screen overflow-hidden">
+            <header class="bg-white shadow-md border-b border-gray-200">
+                <nav class="flex justify-between items-center p-5">
+                    <div class="text-2xl font-extrabold text-indigo-600">
+                        SAFELINK-PLATFORM
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <a href="learning.html" class="text-gray-600 hover:text-indigo-600 font-medium">LEARNING</a>
+                        <a href="index.html" class="text-gray-600 hover:text-indigo-600 font-medium">QUIZ</a> <a href="roadmap.html" class="text-indigo-600 font-semibold">ROADMAP</a> </div>
+                    <div class="w-10 h-10 bg-gray-300 rounded-full">
+                         </div>
+                </nav>
+            </header>
+
+            <main class="flex-1 overflow-y-auto p-8">
+
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-6 text-center">Ethical Hacking Roadmap</h1>
+                    <p class="text-lg text-gray-600 mb-10 text-center">A comprehensive guide from fundamentals to advanced concepts in cybersecurity.</p>
+
+                    <div class="space-y-8">
+
+                        <div class="bg-white p-8 rounded-xl shadow-2xl">
+                            <h2 class="text-2xl font-bold text-indigo-700 mb-4">Phase 0: The Foundation</h2>
+                            <p class="text-gray-600 mb-5">Before you can learn to secure a system, you must understand how it's built. This phase is non-negotiable and forms the bedrock of all your future skills.</p>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Key Areas</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Networking Fundamentals:</strong> Learn the OSI Model, TCP/IP, DNS, DHCP, HTTP/S, and subnetting. You can't hack a network you don't understand.</li>
+                                <li><strong>Linux Proficiency:</strong> Master the command line. Learn file permissions, user management, services, and shell scripting (Bash). Most servers and tools run on Linux.</li>
+                                <li><strong>Windows Fundamentals:</strong> Understand Active Directory, PowerShell, the Windows file system, and registry.</li>
+                                <li><strong>Programming/Scripting:</strong> Learn to read and write code. Start with <strong>Python</strong> for its powerful libraries. Also, understand basic HTML, CSS, and JavaScript for web hacking.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-xl shadow-2xl">
+                            <h2 class="text-2xl font-bold text-indigo-700 mb-4">Phase 1: Reconnaissance (Footprinting)</h2>
+                            <p class="text-gray-600 mb-5">This is the information-gathering phase. The goal is to collect as much data as possible about your target without directly interacting with it (Passive) or by probing it (Active).</p>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Techniques & Tools</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Passive Recon:</strong> Using OSINT (Open-Source Intelligence). Tools include Google Dorking, Shodan, Maltego, and checking social media, job postings, and public records.</li>
+                                <li><strong>Active Recon:</strong> Actively probing the target. Tools include <strong>Nmap</strong> (for port scanning), DNS enumeration, and subdomain scanning (sublist3r, Amass).</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white p-8 rounded-xl shadow-2xl">
+                            <h2 class="text-2xl font-bold text-indigo-700 mb-4">Phase 2: Scanning & Enumeration</h2>
+                            <p class="text-gray-600 mb-5">Now that you have a map of the target, you scan it for open doors (ports) and windows (vulnerabilities). Enumeration is the process of extracting detailed information from the services you find.</p>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Techniques & Tools</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Vulnerability Scanning:</strong> Use tools like <strong>Nessus</strong>, OpenVAS, or Nikto (for web) to automatically find known vulnerabilities.</li>
+                                <li><strong>Service Enumeration:</strong> Find versions and details. For example, using `enum4linux` for SMB, `nmap` scripts (NSE) for FTP/SMTP, and `dirb`/`gobuster` for web directories.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-xl shadow-2xl">
+                            <h2 class="text-2xl font-bold text-indigo-700 mb-4">Phase 3: Gaining Access (Exploitation)</h2>
+                            <p class="text-gray-600 mb-5">This is the "hacking" phase. You use the vulnerabilities and information from the previous steps to gain an initial foothold on a system.</p>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Common Vectors</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Web Application Hacking:</strong> Focus on the <strong>OWASP Top 10</strong> (e.g., SQL Injection, Cross-Site Scripting (XSS), Broken Access Control). Tools: <strong>Burp Suite</strong>.</li>
+                                <li><strong>System Hacking:</strong> Using exploits for unpatched services. The <strong>Metasploit Framework</strong> is the most common tool here.</li>
+                                <li><strong>Network Hacking:</strong> Man-in-the-Middle (MITM) attacks, password sniffing (Wireshark), and cracking Wi-Fi (Aircrack-ng).</li>
+                                <li><strong>Social Engineering:</strong> Phishing, vishing, and baiting. Exploiting the "human" vulnerability.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-xl shadow-2xl">
+                            <h2 class="text-2xl font-bold text-indigo-700 mb-4">Phase 4: Maintaining Access</h2>
+                            <p class="text-gray-600 mb-5">Once you're in, your access is often limited. This phase is about escalating privileges (e.g., from a regular user to root/admin) and ensuring you can get back in later.</p>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Techniques & Tools</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Privilege Escalation:</strong> Using scripts like `linpeas.sh` (Linux) or `winPEAS.exe` (Windows) to find misconfigurations. Exploiting kernel vulnerabilities.</li>
+                                <li><strong>Persistence:</strong> Creating backdoors, installing reverse shells, or using tools like Mimikatz to dump passwords.</li>
+                                <li><strong>Pivoting:</strong> Using the compromised machine as a "pivot" to attack other machines on the internal network that you couldn't see from the outside.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-xl shadow-2xl">
+                            <h2 class="text-2xl font-bold text-indigo-700 mb-4">Phase 5: Covering Tracks & Reporting</h2>
+                            <p class="text-gray-600 mb-5">A malicious attacker covers their tracks to avoid detection. An <strong>ethical</strong> hacker documents everything for the final report. This is the most important part of the job.</p>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">The "Ethical" Part</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Clear Logs:</strong> (For attackers) Deleting or modifying event logs, command history (`.bash_history`), and application logs.</li>
+                                <li><strong>Reporting:</strong> (For ethical hackers) Writing a detailed, professional report that includes an executive summary, a technical breakdown of each vulnerability, and clear, actionable steps for remediation.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-xl shadow-2xl">
+                            <h2 class="text-2xl font-bold text-indigo-700 mb-4">Phase 6: Specialize & Keep Learning</h2>
+                            <p class="text-gray-600 mb-5">Cybersecurity is a massive field. Once you have the fundamentals, you can specialize. Never stop learning, as new technologies and vulnerabilities appear daily.</p>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Popular Specializations</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Web Application Pentesting:</strong> Deep dive into web tech.</li>
+                                <li><strong>Mobile (Android/iOS) Security:</strong> Hacking mobile apps.</li>
+                                <li><strong>Cloud Security (AWS/Azure/GCP):</strong> Securing cloud infrastructure.</li>
+                                <li><strong>Digital Forensics & Incident Response (DFIR):</strong> The "detective" work after a breach.</li>
+                                <li><strong>Malware Analysis / Reverse Engineering:</strong> Tearing apart malware to see how it works.</li>
+                                <li><strong>Certifications:</strong> Consider CompTIA Security+, CEH, OSCP (very hands-on), or speciality certs.</li>
+                            </ul>
+
+                        </div>
+                         <div class="pt-6">
+                            <a href="learning.html" class="block w-full bg-indigo-600 text-white text-xl font-bold py-4 px-6 rounded-lg hover:bg-indigo-700 transition-all shadow-lg hover:shadow-indigo-400/50 transform hover:-translate-y-1 text-center">
+                                Watch Lectures
+                            </a>
+                        </div>
+
+                         <div class="pt-6">
+                            <!-- **** THIS IS THE FIX **** -->
+                            <!-- I changed "quiz_start.html" to "index.html" -->
+                            <a href="index.html" class="block w-full bg-indigo-600 text-white text-xl font-bold py-4 px-6 rounded-lg hover:bg-indigo-700 transition-all shadow-lg hover:shadow-indigo-400/50 transform hover:-translate-y-1 text-center">
+                                Take Test
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                </main>
+        </div>
+    </div>
+
+    </body>
+</html>
